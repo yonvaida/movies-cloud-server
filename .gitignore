@@ -1,0 +1,9 @@
+node_modules
+
+dist/
+
+src/OneDrive/settings.json
+
+src/OpenSub/settings.json
+
+src/MysqlConnector/settings.json

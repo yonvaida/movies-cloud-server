@@ -1,0 +1,41 @@
+{
+  "name": "movies-cloud-server",
+  "version": "1.0.0",
+  "description": "Server that make connection between client and cloud drive",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "nodemon -r esm ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yonvaida/movies-cloud-server.git"
+  },
+  "author": "Ionut Vaida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yonvaida/movies-cloud-server/issues"
+  },
+  "homepage": "https://github.com/yonvaida/movies-cloud-server#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-loader": "^8.1.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.2.0",
+    "nodemon": "^2.0.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "opensubtitles-api": "^5.1.1",
+    "parse-torrent-title": "^1.2.0",
+    "request": "^2.88.2"
+  }
+}
