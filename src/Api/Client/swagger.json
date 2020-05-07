@@ -1,0 +1,71 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "MoviesCloud API",
+    "description": "Client application API",
+    "license": {
+      "name": "",
+      "url": ""
+    }
+  },
+  "host": "192.168.1.110:8080",
+  "basePath": "/api/client/",
+  "tags": [
+    {
+      "name": "Movies",
+      "description": "API for movies"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/allMovies": {
+      "get": {
+        "tags": [
+          "Movies"
+        ],
+        "summary": "Get all movies from all drives",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "post": {
+      "tags": [
+        "Movies"
+      ],
+      "description": "Get first",
+      "parameters": [
+        {
+          "name": "user",
+          "in": "body",
+          "description": "User that we want to create",
+          "schema": {
+            "$ref": "#/definitions/User"
+          }
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "responses": {
+        "200": {
+          "description": "New user is created",
+          "schema": {
+            "$ref": "#/definitions/User"
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --mode production",
+    "start": "node ./dist/server.js",
     "dev": "nodemon -r esm ./src/index.js"
   },
   "repository": {
@@ -31,11 +32,14 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "eslint": "^6.8.0",
     "esm": "^3.2.25",
     "express": "^4.17.1",
+    "mongodb": "^3.5.7",
     "mysql": "^2.18.1",
     "opensubtitles-api": "^5.1.1",
     "parse-torrent-title": "^1.2.0",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "swagger-ui-express": "^4.1.4"
   }
 }

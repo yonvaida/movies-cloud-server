@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 const request = require('request');
 const ptt = require('parse-torrent-title');
-const settings = require('../OneDrive/settings.json');
+const settings = require('../../settings.json');
 
 class OneDriveConnector {
   constructor() {

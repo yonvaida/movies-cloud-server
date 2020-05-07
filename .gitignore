@@ -7,3 +7,5 @@ src/OneDrive/settings.json
 src/OpenSub/settings.json
 
 src/MysqlConnector/settings.json
+
+src/settings.json
